@@ -94,7 +94,7 @@ export function ResultCard({ result, rank }: { result: ScoredLocation; rank: num
         <QuickStats location={location} />
         <div className="flex flex-col gap-1.5">
           <h4 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            Why it fits
+            Why this matches you
           </h4>
           <ReasonList reasons={reasons} limit={3} />
         </div>
