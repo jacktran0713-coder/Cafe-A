@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Plug, Sparkles, Volume, Wifi } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { RotatingPhrase } from "@/components/landing/rotating-phrase"
 
 export function Hero() {
   return (
@@ -13,14 +14,7 @@ export function Hero() {
           For high school & college students
         </span>
         <h1 className="text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-          Find your perfect{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10">study spot.</span>
-            <span
-              aria-hidden="true"
-              className="absolute inset-x-0 bottom-1 z-0 h-4 -rotate-1 rounded-sm bg-accent sm:h-5"
-            />
-          </span>
+          Find your perfect <RotatingPhrase />
         </h1>
         <p className="max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
           Tell us how you like to study — quiet or social, solo or group, near or far — and
