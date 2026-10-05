@@ -43,7 +43,7 @@ export function Hero() {
       <div className="relative animate-rise [animation-delay:120ms]">
         <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-xl shadow-primary/10">
           <Image
-            src="/images/hero.png"
+            src="/images/hero-boston-library.png"
             alt="Illustration of a student studying at a cozy desk with a laptop, books, and coffee"
             width={1024}
             height={1024}
@@ -60,7 +60,7 @@ export function Hero() {
             <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
               Best match
             </span>
-            <span className="font-heading font-semibold">Hartwell Library</span>
+            <span className="font-heading font-semibold">Boston Public Libary - Copley Square</span>
           </div>
         </div>
 

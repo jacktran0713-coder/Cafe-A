@@ -8,7 +8,7 @@ export function Logo() {
       <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
         <BookOpen aria-hidden="true" className="size-5" />
       </span>
-      <span className="font-heading text-xl font-bold tracking-tight">StudySpot</span>
+      <span className="font-heading text-xl font-bold tracking-tight">Caf-A</span>
     </Link>
   )
 }

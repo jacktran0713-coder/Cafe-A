@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/site-header"
 import { parsePreferences } from "@/lib/preferences"
 
 export const metadata: Metadata = {
-  title: "Your matches — StudySpot",
+  title: "Your matches — Caf-A",
   description: "Study spots ranked by how well they match your preferences.",
 }
 

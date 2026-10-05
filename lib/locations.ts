@@ -119,7 +119,7 @@ export const LOCATIONS: StudyLocation[] = [
   },
   {
     id: "maple-courtyard",
-    name: "Maple Grove Courtyard",
+    name: "John's Test Study Spot",
     type: "outdoor",
     neighborhood: "Arts Quad",
     image: "/images/maple-courtyard.png",

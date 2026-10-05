@@ -20,7 +20,7 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "StudySpot — Find your perfect study spot",
   description:
-    "StudySpot helps high school and college students find the best place to study based on noise level, crowdedness, price, Wi-Fi, outlets, seating, and distance.",
+    "Caf-A helps high school and college students find the best place to study based on noise level, crowdedness, price, Wi-Fi, outlets, seating, and distance.",
 }
 
 export const viewport: Viewport = {
