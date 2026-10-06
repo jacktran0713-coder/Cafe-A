@@ -12,6 +12,11 @@ export type StudyLocation = {
   name: string
   type: Environment
   neighborhood: string
+  address?: string
+
+  latitude?: number
+  longitude?:number
+
   image: string
   noise: NoiseLevel
   crowd: CrowdLevel
@@ -25,6 +30,7 @@ export type StudyLocation = {
   hours: string
   description: string
   highlights: string[]
+  website?: string
 }
 
 export const NOISE_LABELS = ["Silent", "Quiet", "Moderate", "Social"] as const
@@ -57,26 +63,43 @@ export const TYPE_LABELS: Record<Environment, string> = {
 }
 
 export const LOCATIONS: StudyLocation[] = [
-  {
-    id: "hartwell-library",
-    name: "Hartwell Library — 4th Floor",
-    type: "library",
-    neighborhood: "North Campus",
-    image: "/images/hartwell-library.png",
-    noise: 0,
-    crowd: 0,
-    price: "free",
-    priceNote: "Free with student ID",
-    wifi: true,
-    outlets: "plenty",
-    food: "none",
-    seating: "individual",
-    distance: 8,
-    hours: "7am – 2am",
-    description:
-      "A designated silent floor with lamp-lit carrels and tall windows. The go-to spot for deep focus before exams.",
-    highlights: ["Silent floor policy", "Outlets at every carrel", "Open late"],
-  },
+  
+    {
+  id: "bpl-central",
+  name: "Boston Public Library — Central Library",
+  type: "library",
+  neighborhood: "Back Bay",
+  address: "700 Boylston Street, Boston, MA 02116",
+
+  latitude: 42.3493,
+  longitude: -71.0782,
+
+  image: "/images/Copley.jpg",
+
+  noise: 1,
+  crowd: 1,
+  price: "free",
+  priceNote: "Free",
+  wifi: true,
+  outlets: "plenty",
+  food: "onsite",
+  seating: "both",
+
+  distance: 1,
+  hours: "Mon–Thu 9 AM–8 PM; Fri–Sat 9 AM–5 PM; Sun 11 AM–5 PM",
+
+  description:
+    "The Central Library in Copley Square offers a variety of spaces for studying, reading, and working.",
+
+  highlights: [
+    "Free Wi-Fi",
+    "Multiple study spaces",
+    "Study rooms available",
+    "Cafés inside the library",
+  ],
+
+  website: "https://www.bpl.org/locations/central/",
+},
   {
     id: "bean-byte-cafe",
     name: "Bean & Byte Café",
