@@ -2,6 +2,7 @@
 "use client"
 
 import { useState } from "react"
+import { track } from "@vercel/analytics"
 
 export function PremiumBanner() {
   const [showSurvey, setShowSurvey] = useState(false)
@@ -20,11 +21,16 @@ export function PremiumBanner() {
         </div>
 
         <button
-          onClick={() => setShowSurvey(true)}
+          onClick={() =>  {
+            track("premium_button_clicked")
+            setShowSurvey(true)
+          }} 
           className="shrink-0 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700"
-        >
+        > 
           Explore Caf-A Plus
         </button>
+
+    
       </div>
 
       {showSurvey && (
