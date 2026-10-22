@@ -3,6 +3,7 @@ import { ResultsExplorer } from "@/components/results/results-explorer"
 import { SiteFooter } from "@/components/landing/features"
 import { SiteHeader } from "@/components/site-header"
 import { parsePreferences } from "@/lib/preferences"
+import { PremiumBanner } from "@/components/results/premium-banner"
 
 export const metadata: Metadata = {
   title: "Your matches — Caf-A",
@@ -16,6 +17,7 @@ export default async function ResultsPage({ searchParams }: PageProps<"/results"
     <>
       <SiteHeader />
       <main className="flex-1">
+         <PremiumBanner />
         <ResultsExplorer initialPreferences={initialPreferences} />
       </main>
       <SiteFooter />
