@@ -3,6 +3,7 @@
 
 import { useState } from "react"
 import { track } from "@vercel/analytics"
+import { sendGAEvent } from "@next/third-parties/google"
 
 export function PremiumBanner() {
   const [showSurvey, setShowSurvey] = useState(false)
@@ -23,6 +24,7 @@ export function PremiumBanner() {
         <button
           onClick={() =>  {
             track("premium_button_clicked")
+            sendGAEvent("event", "premium_button_clicked")
             setShowSurvey(true)
           }} 
           className="shrink-0 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700"
